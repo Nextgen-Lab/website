@@ -1,0 +1,17 @@
+.brand-slider-active {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the spacing as needed */
+  }
+  
+  .brand-item {
+    flex: 0 1 auto; /* Ensure each item takes only as much space as needed */
+  }
+
+  .brand-item {
+    margin-right: 20px;
+  }
+  
+  .brand-item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+  }
