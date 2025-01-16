@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <>
       <div
-        className="tp-contact-area grey-bg pb-120 pt-120 wow tpfadeUp"
+        className="tp-contact-area grey-bg pb-60 pt-60 wow tpfadeUp"
         data-wow-duration=".7s"
         data-wow-delay=".5s"
       >

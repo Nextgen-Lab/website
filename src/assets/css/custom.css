@@ -155,10 +155,26 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: var(--tp-common-yellow);
+  background-color: #c12025;
+  transition: all 0.3s ease-in-out;
 }
 
+.tp-footer-area p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
 
+.tp-main-menu ul li:hover > .submenu {
+  top: 185%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tp-footer-widget__list ul.footer-position li {
+  padding-left: 0;
+}
 
 .tp-service-sm-title a{
   color: #fff !important;
@@ -221,4 +237,217 @@
   opacity: 0;
   /* visibility: hidden; */
   transition: 0.4s;
+}
+
+.custom-arrow {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-arrow-prev {
+  left: -50px; /* Adjust position */
+}
+
+.custom-arrow-next {
+  right: -50px; /* Adjust position */
+}
+
+.custom-arrow:hover {
+  background-color: #f0c040;
+}
+
+.tp-testimonial-item {
+  background-color: #115779;
+  padding: 50px 60px;
+  padding-right: 75px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.tp-testimonial-item__text p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.client-name {
+  color: #fff;
+}
+
+.tp-testimonial-item__info-text span {
+ color: #fff;
+}
+
+.tp-testimonial-item__icon i {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.26);
+  height: 56px;
+  width: 56px;
+  background-color: #c12025;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--tp-common-white);
+}
+
+.tp-testimonial-item__ratting span {
+  color: #c12025;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.26);
+}
+
+.tp-main-menu ul li a {
+  position: relative;
+}
+
+.tp-main-menu ul li a::before {
+  content: ""; /* Ensure content is defined */
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Make sure it starts from the left */
+  width: 0;
+  height: 2px;
+  background-color: #115779;
+  visibility: visible; /* Ensure it's visible */
+  transition: all 0.3s ease;
+}
+
+.tp-service-item__button-link:hover a span::after {
+  background-color: #115779;
+}
+
+.tp-main-menu ul li a:hover::before {
+  width: 100%;
+}
+
+.breadcrumb-height {
+  padding-top: 108px;
+}
+
+.tp-inner-list ul li {
+  padding-left: 19px;
+}
+
+.tp-inner-list ul {
+  display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-left: 0;
+}
+
+.ab-title-xs {
+  font-weight: 600;
+  font-size: 29px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #000;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  background: #000;
+  height: 50px;
+  position: absolute;
+  top: 86px;
+}
+
+@media (max-width: 767px) {
+  .hero-grideant-bg {
+      padding-top: 80px;
+      padding-bottom: 0;
+  }
+
+  .tp-hero-shape-three {
+    position: absolute;
+    bottom: 95px;
+    left: 11px;
+    z-index: 3;
+    animation: moving 5s ease-in-out infinite;
+}
+
+.tp-section-subtitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tp-about-area.ab-area-sapce{
+  padding-bottom: 25px !important;
+}
+
+.tp-service-area.service-space-bottom{
+  padding-bottom: 25px !important;
+}
+
+.tp-testimonial-area.tp-testimonial-space{
+  padding-bottom: 25px !important;
+}
+
+.breadcrumb-height {
+  padding-top: 80px;
+}
+
+.tp-about-us-area{
+  padding-top: 0;
+}
+}
+
+#header-sticky {
+  transition: all 0.3s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white; /* Change to match your theme */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for better effect */
+  z-index: 1000;
+}
+
+/* Add the smooth transition for the mobile menu */
+.mobile-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%); /* Start off-screen */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.mobile-screen.open {
+  transform: translateX(0); /* Move to visible position */
+}
+
+.mobile-screen-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
