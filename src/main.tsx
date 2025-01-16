@@ -13,6 +13,8 @@ import "./assets/css/magnific-popup.css";
 import "./assets/css/spacing.css";
 import "./assets/css/custom.css";
 import "./assets/css/hover-reveal.css"
+import './assets/css/swiper-bundle.css';
+
 
 import App from "./App.tsx";
 

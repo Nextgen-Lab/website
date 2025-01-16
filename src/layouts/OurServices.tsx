@@ -3,9 +3,9 @@ import data from "../data.json"
 const OurServices = () => {
   return (
     <>
-      <div className="tp-service-area service-space-bottom pb-110 ">
+      <div className="tp-service-area service-space-bottom pb-70 ">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div
               className="col-xl-5 col-lg-5 wow tpfadeLeft"
               data-wow-duration=".7s"
@@ -21,7 +21,7 @@ const OurServices = () => {
                   </h3>
                 </div>
                 <div className="tp-service-content mb-20">
-                  <h4 className="tp-service-sm-title">
+                  <h4 className="tp-service-sm-subtitle">
                     We'll ensure you always get the best Digital Service
                   </h4>
                   <a className="tp-btn" href="/our-services">
@@ -34,12 +34,12 @@ const OurServices = () => {
               <div className="row service-space-left">
                 {data.services.map((service, i) => (
                   <div
-                    className="col-12 wow tpfadeUp"
+                    className="col-12 col-md-6 wow tpfadeUp"
                     data-wow-duration=".7s"
                     data-wow-delay=".7s"
                     key={i}
                   >
-                    <div className="tp-service-item mb-20 d-flex justify-content-between">
+                    <div className="tp-service-item mb-20 d-flex gap-3 justify-content-between">
                       <div className="tp-service-item__content">
                         <h4 className="tp-service-sm-title">
                           <Link to="/our-services/web-development">
@@ -52,7 +52,7 @@ const OurServices = () => {
                               <svg
                                 width="34"
                                 height="16"
-                                viewBox="0 0 34 16"
+                                viewBox="0 0 36 20"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                               >

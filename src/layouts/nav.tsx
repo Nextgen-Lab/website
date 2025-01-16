@@ -107,9 +107,9 @@ const Nav = () => {
           className="tp-header-area header-pl-pr header-transparent header-border-bottom"
         >
           <div className="container-fluid">
-            <div className="row g-0 align-items-center">
+            <div className="row align-items-center nav-container">
               {/* Logo */}
-              <div className="col-xl-2 col-lg-2 col-md-4 col-6">
+              <div className="col-xl-2 col-lg-2 col-md-4 col-6 nav-contains">
                 <div className="tp-logo tp-logo-border">
                   <Link to="/">
                     <img src={logo} alt="Next Gen Lab Logo" width={200} />
