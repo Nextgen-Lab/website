@@ -11,7 +11,7 @@ const OurProjects = () => {
           <div className="row">
             <div className="col-md-9 col-sm-12">
               <div className="breadcrumb__content">
-                <h3 className="breadcrumb__title">About Us</h3>
+                <h3 className="breadcrumb__title">Projects</h3>
                 <div
                   className="breadcrumb__list wow tpfadeUp d-flex align-items-center"
                   data-wow-duration=".9s"
@@ -22,12 +22,12 @@ const OurProjects = () => {
                   <span className="dvdr">
                     <i className="fi fi-br-angle-right d-flex"></i>
                   </span>
-                  <span>About Us</span>
+                  <span>Projects</span>
                 </div>
               </div>
             </div>
             <div className="col-3 d-none d-md-block">
-              <img src={ProjectImg} alt="about us icon" />
+              <img src={ProjectImg} alt="project icon" />
             </div>
           </div>
         </div>
