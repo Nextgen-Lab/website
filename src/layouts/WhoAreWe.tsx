@@ -13,11 +13,11 @@ import HeroStarShapesm from "../assets/img/hero-star-sm-shape.png";
 const WhoAreWe = () => {
   return (
     <>
-      <div className="tp-about-area ab-area-sapce pt-120 pb-120">
+      <div className="tp-about-area ab-area-sapce pt-0 pb-120">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row">
             <div
-              className="col-xl-5 col-lg-5 order-2 order-lg-1 wow tpfadeLeft"
+              className="col-xl-5 col-lg-5 wow tpfadeLeft"
               data-wow-duration=".7s"
               data-wow-delay=".5s"
             >

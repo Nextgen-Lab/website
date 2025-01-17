@@ -16,7 +16,7 @@ const Footer = () => {
                      <div className="tp-footer-widget z-index-3">
                         <div className="tp-footer-widget__list">
                            <img src={logo} alt="" style={{ filter: "brightness(0) invert(1)", width: "200px" }} />
-                           <p className='fs-6'>Next Gen Lab do Design, Code,Develop and Branding</p>
+                           <p className='fs-6'>Next Gen Lab  Design, Code, Develop and Branding</p>
                         </div>
                      </div>
                   </div>
@@ -104,7 +104,7 @@ const Footer = () => {
                   <div className="row">
                      <div className="col-xl-6 col-lg-7 col-12">
                         <div className="copyright-left text-center text-lg-start">
-                           <p>©Copy RIght @{date.getFullYear()} All Rights Reserved - Next Gen lab</p>
+                           <p>©{date.getFullYear()}  Next Gen lab. All Rights Reserved.</p>
                         </div>
                      </div>
                      <div className="col-xl-6 col-lg-5 col-12">

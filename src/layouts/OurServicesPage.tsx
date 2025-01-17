@@ -1,40 +1,34 @@
 import { Link } from "react-router-dom";
 import data from "../data.json"
-const OurServices = () => {
+const OurServicesPage = () => {
   return (
     <>
       <div className="tp-service-area service-space-bottom pb-70 ">
         <div className="container">
-          <div className="row align-items-center">
             <div
-              className="col-xl-5 col-lg-5 wow tpfadeLeft"
+              className="col-xl-12 col-lg-12 wow tpfadeLeft"
               data-wow-duration=".7s"
               data-wow-delay=".5s"
             >
               <div className="service-section-wrapper">
                 <div className="tp-service-section-title-box">
-                  <h4 className="tp-section-subtitle tp-yellow-color">
-                    What we can do for you?
-                  </h4>
                   <h3 className="tp-section-title">
                     Service we can help you with
                   </h3>
                 </div>
-                <div className="tp-service-content mb-20">
+                <div className="tp-service-content mb-10">
                   <h4 className="tp-service-sm-subtitle">
                     We'll ensure you always get the best Digital Service
                   </h4>
-                  <a className="tp-btn" href="/our-services">
-                    See all Services
-                  </a>
+                 
                 </div>
               </div>
             </div>
-            <div className="col-xl-7 col-lg-7">
+            <div className="col-xl-12 col-lg-12">
               <div className="row service-space-left">
                 {data.services.map((service, i) => (
                   <div
-                    className="col-12 col-md-6 wow tpfadeUp"
+                    className="col-12 col-md-4 wow tpfadeUp"
                     data-wow-duration=".7s"
                     data-wow-delay=".7s"
                     key={i}
@@ -76,11 +70,11 @@ const OurServices = () => {
                 ))}
               </div>
             </div>
-          </div>
+         
         </div>
       </div >
     </>
   );
 };
 
-export default OurServices;
+export default OurServicesPage;

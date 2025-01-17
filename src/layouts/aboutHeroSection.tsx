@@ -7,7 +7,7 @@ import abInnerThree from "../assets/img/about/abinTwo.jpg";
 const AboutHeroSection = () => {
   return (
     <>
-      <div className="tp-about-us-area pt-120 pb-120 mt-5">
+      <div className="tp-about-us-area pt-40 pb-60 mt-5">
         <div className="container">
           <div className="row">
             <div

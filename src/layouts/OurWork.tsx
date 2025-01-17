@@ -64,23 +64,22 @@ const OurWork = ({ showLimit = 20 }) => {
               .slice(0, showLimit ? showLimit : cases.length)
               .map((item, index) => (
                 <div
-                  className={`col-xl-6 col-lg-6 wow ${
+                  className={`col-xl-4 col-lg-4 wow ${
                     index % 2 === 0 ? "tpfadeLeft" : "tpfadeRight"
                   }`}
                   data-wow-duration=".7s"
                   data-wow-delay={item.delay}
                 >
-                  <div className="tp-case-thumb p-relative fix mb-20">
+                      <a href={item.to} target="_blank">
+                  <div className="tp-case-thumb project-container p-relative fix mb-20">
                     <img src={item.image} alt={`Case ${item.id}`} />
                     <div className="case-icon">
-                      <a href={item.to} target="_blank">
-                        <i
-                          className="fas fa-arrow-up"
-                          style={{ color: "white" }}
-                        ></i>
-                      </a>
+                    <a href={item.to} target="_blank">
+                    {item.title}
+                        </a>
                     </div>
                   </div>
+                      </a>
                 </div>
               ))}
           </div>
